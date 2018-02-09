@@ -5,23 +5,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<link rel="stylesheet" href="assets/css/normalize.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css">
+		
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
 		<link rel="stylesheet" href="assets/css/portfolio.css">
 		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+		
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
 	</head>
 
 	<body>
-		<div id='mainImage'>
-			<img src='assets/images/boat.jpg'>
+		<div id='fullpage'>
+			
+			<div class="section">
+				
+				<img id='myName' src='assets/images/myname.png'>
+
+				<div id='mainImage'>
+					<img id='boat' src='assets/images/boat.jpg'>
+				</div>
+				
+				<div id='navButtons'>
+					<a href='#'>About</a>
+					<span class='dot'></span>
+					<a href='#'>Work</a>
+					<span class='dot'></span>
+					<a href='#'>Contact</a>
+				</div>
+			</div>
+			
+			<div class="section">
+				
+			</div>
 		</div>
-		
-		<div id='navButtons'>
-			<a href='#'>About</a>
-			<span class='dot'></span>
-			<a href='#'>Work</a>
-			<span class='dot'></span>
-			<a href='#'>Contact</a>
-		</div>
+
+		<script>
+			$(function() {
+				$('#fullpage').fullpage({
+					anchors: ['Front', 'About']
+				});
+			});
+
+		</script>
 	</body>
 
 </html>

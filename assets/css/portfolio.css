@@ -2,13 +2,24 @@ body {
 	background-image: url('../images/linen.png');
 }
 
-#mainImage>img {
+#myName {
 	display: block;
-	margin: 50px auto;
+	margin: 0px auto;
+}
+
+#mainImage {
+	margin: 20px auto;
+	width: 700px;
+}
+#mainImage>#boat {
+	display: block;
+	margin: 0px auto;
 	width: 300px;
 
 	border-radius: 50%;
 	border: 5px solid #924444;
+
+	vertical-align: middle;
 }
 
 #navButtons {

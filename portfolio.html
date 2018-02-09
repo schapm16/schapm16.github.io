@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta lang='en-us' charset='utf-8'>
+		<meta lang="en-us" charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<link rel="stylesheet" href="assets/css/normalize.css">
@@ -16,21 +16,21 @@
 	</head>
 
 	<body>
-		<div id='fullpage'>
+		<div id="fullpage">
 			
 			<div class="section">
-				<img id='myName' src='assets/images/myname.png'>
+				<img id="myName" src="assets/images/myname.png">
 
-				<div id='mainImage'>
-					<img id='boat' src='assets/images/boat.jpg'>
+				<div id="mainImage">
+					<img id="boat" src="assets/images/boat.jpg">
 				</div>
 				
-				<div id='navButtons'>
-					<a href='#About'>About</a>
-					<span class='dot'>&#9679</span>
-					<a href='#Work'>Work</a>
-					<span class='dot'>&#9679</span>
-					<a href='#Contact'>Contact</a>
+				<div id="navButtons">
+					<a href="#About">About</a>
+					<span class="dot">&#9679</span>
+					<a href="#Work">Work</a>
+					<span class="dot">&#9679</span>
+					<a href="#Contact">Contact</a>
 				</div>
 			</div>
 			
@@ -41,22 +41,22 @@
 		
 		<div id="sideNav">
 			<ul>
-				<li><a href='#Front'>
-					<img src='assets/images/boat.jpg'>
+				<li><a href="#Front">
+					<img src="assets/images/boat.jpg">
 				</a></li>
-				<li><span class='dot'>&#9679</span></li>
-				<li><a href='#About'>About</a></li>
-				<li><span class='dot'>&#9679</span></li>
-				<li><a href='#Work'>Work</a></li>
-				<li><span class='dot'>&#9679</span></li>
-				<li><a href='#Contact'>Contact</a></li>
+				<li><span class="dot">&#9679</span></li>
+				<li><a href="#About">About</a></li>
+				<li><span class="dot">&#9679</span></li>
+				<li><a href="#Work">Work</a></li>
+				<li><span class="dot">&#9679</span></li>
+				<li><a href="#Contact">Contact</a></li>
 			</ul>
 		</div>
 		
 		<script>
 			$(function() {
 				$('#fullpage').fullpage({
-					anchors: ['Front', 'About'],
+					anchors: ['Front', 'About', 'Work', 'Contact'],
 					fixedElements: '#sideNav',
 
 					afterLoad: function (anchorlink, index){

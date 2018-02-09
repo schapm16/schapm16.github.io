@@ -59,7 +59,7 @@
 					anchors: ['Front', 'About', 'Work', 'Contact'],
 					fixedElements: '#sideNav',
 
-					afterLoad: function (anchorlink, index){
+					afterLoad: function (anchorlink){
 						if (anchorlink === 'Front') {
 							$('#sideNav').animate({
 								opacity: '0',

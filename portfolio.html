@@ -27,9 +27,9 @@
 				
 				<div id='navButtons'>
 					<a href='#About'>About</a>
-					<span class='dot'></span>
+					<span class='dot'>&#9679</span>
 					<a href='#Work'>Work</a>
-					<span class='dot'></span>
+					<span class='dot'>&#9679</span>
 					<a href='#Contact'>Contact</a>
 				</div>
 			</div>
@@ -38,11 +38,43 @@
 				
 			</div>
 		</div>
-
+		
+		<div id="sideNav">
+			<ul>
+				<li><a href='#Front'>
+					<img src='assets/images/boat.jpg'>
+				</a></li>
+				<li><span class='dot'>&#9679</span></li>
+				<li><a href='#About'>About</a></li>
+				<li><span class='dot'>&#9679</span></li>
+				<li><a href='#Work'>Work</a></li>
+				<li><span class='dot'>&#9679</span></li>
+				<li><a href='#Contact'>Contact</a></li>
+			</ul>
+		</div>
+		
 		<script>
 			$(function() {
 				$('#fullpage').fullpage({
-					anchors: ['Front', 'About']
+					anchors: ['Front', 'About'],
+					fixedElements: '#sideNav',
+
+					afterLoad: function (anchorlink, index){
+						if (anchorlink === 'Front') {
+							$('#sideNav').animate({
+								opacity: '0',
+								right: '-200px'
+							}, 'slow', function() {
+								$('#sideNav').css('display','none');
+							});
+						} else {
+							$('#sideNav').css('display', 'block');
+							$('#sideNav').animate({
+								opacity: '1',
+								right: '0px'
+							}, 'slow');
+						}
+					}
 				});
 			});
 

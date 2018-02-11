@@ -1,9 +1,8 @@
 body {
-	position: absolute;
 	background-image: url('../images/linen.png');
 }
 
-/*The following pertains to the fixed Side Nav*/
+/*Side Nav*/
 #sideNav {
 	position: fixed;
 	display: none;
@@ -45,7 +44,7 @@ body {
 }
 /*End Side Nav*/
 
-/*The following pertains to the Front Page*/
+/*Front Page*/
 #myName {
 	display: block;
 	margin: 0px auto;
@@ -81,14 +80,11 @@ body {
 #navButtons>a {
 	color: inherit;
 	text-decoration: none;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 1.25em;
 
 	width: 20%;
 	text-align: center;
 
 	border-bottom: 2px solid transparent;
-	
 }
 
 #navButtons>a:hover {
@@ -100,4 +96,18 @@ body {
 	color: #44925A;
 }
 /*End Front Page*/
+
+/*In Progress*/
+.sectionTitle {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 5em;
+}
+#about .sectionTitle,
+#contact .sectionTitle {
+	border-bottom: 3px solid #44925A;
+}
+
+#work .sectionTitle {
+	border-bottom: 3px solid #924444;
+}
 

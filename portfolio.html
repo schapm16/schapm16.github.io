@@ -16,9 +16,9 @@
 	</head>
 
 	<body>
-		<div id="fullpage">
+		<main id="fullpage">
 			
-			<div class="section">
+			<section id="front" class="section">
 				<img id="myName" src="assets/images/myname.png">
 
 				<div id="mainImage">
@@ -32,14 +32,22 @@
 					<span class="dot">&#9679</span>
 					<a href="#Contact">Contact</a>
 				</div>
-			</div>
+			</section>
 			
-			<div class="section">
-				
-			</div>
-		</div>
+			<section id="about" class="section">
+				<h2 class="sectionTitle">About</h2>
+			</section>
+
+			<section id="work" class="section">
+				<h2 class="sectionTitle">Work</h2>
+			</section>
+			
+			<section id="contact" class="section">
+				<h2 class="sectionTitle">Contact</h2>
+			</section>
+		</main>
 		
-		<div id="sideNav">
+		<nav id="sideNav">
 			<ul>
 				<li><a href="#Front">
 					<img src="assets/images/boat.jpg">
@@ -51,14 +59,17 @@
 				<li><span class="dot">&#9679</span></li>
 				<li><a href="#Contact">Contact</a></li>
 			</ul>
-		</div>
+		</nav>
 		
 		<script>
 			$(function() {
+				
+				// Configure fullPage.js
 				$('#fullpage').fullpage({
 					anchors: ['Front', 'About', 'Work', 'Contact'],
 					fixedElements: '#sideNav',
 
+					// Reveal and Hide Side Nav
 					afterLoad: function (anchorlink){
 						if (anchorlink === 'Front') {
 							$('#sideNav').animate({

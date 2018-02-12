@@ -2,7 +2,7 @@ $(function() {
 	
 	// Configure fullPage.js
 	$('#fullpage').fullpage({
-		anchors: ['front-page', 'about-page', 'work-page', 'contact-page'],
+		anchors: ['front-page', 'story-page', 'work-page', 'contact-page'],
 		fixedElements: '#sideNav',
 		menu: '#sideNav>ul',
 

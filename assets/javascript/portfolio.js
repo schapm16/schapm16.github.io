@@ -2,12 +2,13 @@ $(function() {
 	
 	// Configure fullPage.js
 	$('#fullpage').fullpage({
-		anchors: ['Front', 'About', 'Work', 'Contact'],
+		anchors: ['front-page', 'about-page', 'work-page', 'contact-page'],
 		fixedElements: '#sideNav',
+		menu: '#sideNav>ul',
 
 		// Reveal and Hide Side Nav
 		afterLoad: function (anchorlink){
-			if (anchorlink === 'Front') {
+			if (anchorlink === 'front-page') {
 				$('#sideNav').animate({
 					opacity: '0',
 					right: '-200px'

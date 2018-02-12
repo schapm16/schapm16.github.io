@@ -55,7 +55,7 @@ body {
 	width: 700px;
 }
 
-#mainImage>#boat {
+#mainImage>img {
 	display: block;
 	margin: 0px auto;
 	width: 300px;
@@ -116,12 +116,10 @@ body {
 #aboutContent {
 	display: flex;
 	justify-content: space-between;
-
 	flex-wrap: wrap;
 
-	width: 80%;
+	width: 75%;
 	margin: 0px auto;
-
 	padding: 20px;
 	
 	background: white;
@@ -129,7 +127,7 @@ body {
 }
 
 #aboutContent>.column {
-	width: 350px;
+	width: 300px;
 
 	border-bottom: 3px solid #924444;
 }
@@ -140,7 +138,7 @@ body {
 	
 	padding-bottom: 2px;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 4em;
+	font-size: 3em;
 }
 
 #aboutContent img {
@@ -156,6 +154,6 @@ body {
 
 #aboutContent p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.25em;
+	text-indent: 1em;
 }
 /*End About Section*/

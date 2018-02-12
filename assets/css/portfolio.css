@@ -97,21 +97,6 @@ body {
 }
 /*End Front Page*/
 
-/*Section Common*/
-.sectionTitle {
-	font-family: 'Work Sans', sans-serif;
-	font-size: 2em;
-}
-#about .sectionTitle,
-#contact .sectionTitle {
-	border-bottom: 3px solid #44925A;
-}
-
-#work .sectionTitle {
-	border-bottom: 3px solid #924444;
-}
-/*End Section Common*/
-
 /*About Section*/
 #aboutContent {
 	display: flex;

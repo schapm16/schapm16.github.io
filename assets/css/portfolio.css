@@ -7,11 +7,11 @@ body {
 	position: fixed;
 	display: none;
 	opacity: 0;
-	right: -200px;
+	right: -150px;
 	top: 25%;
 
 	height: 50%;
-	width: 200px;
+	width: 150px;
 
 	text-align: center;
 
@@ -97,10 +97,10 @@ body {
 }
 /*End Front Page*/
 
-/*In Progress*/
+/*Section Common*/
 .sectionTitle {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 5em;
+	font-size: 2em;
 }
 #about .sectionTitle,
 #contact .sectionTitle {
@@ -110,4 +110,52 @@ body {
 #work .sectionTitle {
 	border-bottom: 3px solid #924444;
 }
+/*End Section Common*/
 
+/*About Section*/
+#aboutContent {
+	display: flex;
+	justify-content: space-between;
+
+	flex-wrap: wrap;
+
+	width: 80%;
+	margin: 0px auto;
+
+	padding: 20px;
+	
+	background: white;
+	border-radius: 10px;
+}
+
+#aboutContent>.column {
+	width: 350px;
+
+	border-bottom: 3px solid #924444;
+}
+
+#aboutContent h2 {
+	margin: 20px 0px;
+	border-bottom: 3px solid #44925A;;
+	
+	padding-bottom: 2px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 4em;
+}
+
+#aboutContent img {
+	display: block;
+	margin: 20px auto;
+
+	width: 200px;
+	height: 200px;
+	
+	border-radius: 10px;
+	border: 1px solid #323232;
+}
+
+#aboutContent p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.25em;
+}
+/*End About Section*/

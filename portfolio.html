@@ -14,6 +14,7 @@
 
 		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
+		<script src="assets/javascript/portfolio.js"></script>
 	</head>
 
 	<body>
@@ -84,36 +85,5 @@
 				<li><a href="#Contact">Contact</a></li>
 			</ul>
 		</nav>
-		
-		<script>
-			$(function() {
-				
-				// Configure fullPage.js
-				$('#fullpage').fullpage({
-					anchors: ['Front', 'About', 'Work', 'Contact'],
-					fixedElements: '#sideNav',
-
-					// Reveal and Hide Side Nav
-					afterLoad: function (anchorlink){
-						if (anchorlink === 'Front') {
-							$('#sideNav').animate({
-								opacity: '0',
-								right: '-200px'
-							}, 'slow', function() {
-								$('#sideNav').css('display','none');
-							});
-						} else {
-							$('#sideNav').css('display', 'block');
-							$('#sideNav').animate({
-								opacity: '1',
-								right: '0px'
-							}, 'slow');
-						}
-					}
-				});
-			});
-
-		</script>
 	</body>
-
 </html>

@@ -210,7 +210,8 @@ transition: 1s;
 #contact .contactDetails .links a {
 	font-family: 'Raleway', sans-serif;
 	color: inherit;
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight: bolder;
 }
 
 /*End Contact Section*/

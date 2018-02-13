@@ -149,8 +149,8 @@ body {
 /*Work Section*/
 #work .row {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 }
 #work .project {
 	position: relative;
@@ -170,7 +170,8 @@ body {
 	left: 0px;
 	top: 0px;
 	z-index: 1;
-
+	
+	box-sizing: border-box;
 	padding: 7px;
 
 	width: 100%;

@@ -7,8 +7,6 @@ $(function() {
 		fixedElements: '#sideNav',
 		menu: '#sideNav>ul',
 		scrollOverflow: true,
-		slidesNavigation: true,
-
 
 		// Reveal and Hide Side Nav
 		afterLoad: function (anchorlink){

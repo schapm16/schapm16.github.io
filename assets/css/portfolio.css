@@ -2,52 +2,6 @@ body {
 	background-image: url('../images/linen.png');
 }
 
-/*Side Nav*/
-#sideNav {
-	position: fixed;
-	display: none;
-	opacity: 0;
-	right: -150px;
-	top: 25%;
-
-	height: 50%;
-	width: 150px;
-
-	text-align: center;
-
-}
-
-#sideNav ul {
-	list-style: none;
-	padding-left: 0;
-}
-
-#sideNav ul>* {
-	margin-bottom: 10px;
-}
-
-#sideNav li.active a {
-	border-bottom: 2px solid #44925A;
-}
-
-#sideNav a {
-	color: inherit;
-	text-decoration: none;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 1.25em;
-}
-
-#sideNav img {
-	width: 40px;
-	border-radius: 50%;
-	border: 2px solid #924444;
-}
-
-#sideNav .dot {
-	color: #44925A;
-}
-/*End Side Nav*/
-
 /*Front Page*/
 #myName {
 	display: block;
@@ -259,6 +213,51 @@ transition: 1s;
 }
 
 /*End Contact Section*/
+
+/*Side Nav*/
+#sideNav {
+	position: fixed;
+	display: none;
+	opacity: 0;
+	right: -150px;
+	top: 25%;
+
+	height: 50%;
+	width: 150px;
+
+	text-align: center;
+}
+
+#sideNav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#sideNav ul>* {
+	margin-bottom: 10px;
+}
+
+#sideNav li.active a {
+	border-bottom: 2px solid #44925A;
+}
+
+#sideNav a {
+	color: inherit;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.25em;
+}
+
+#sideNav img {
+	width: 40px;
+	border-radius: 50%;
+	border: 2px solid #924444;
+}
+
+#sideNav .dot {
+	color: #44925A;
+}
+/*End Side Nav*/
 
 /*Media Queries*/
 @media screen and (max-width: 1021px) {

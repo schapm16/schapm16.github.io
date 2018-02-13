@@ -51,7 +51,7 @@ body {
 /*Front Page*/
 #myName {
 	display: block;
-	width: 100%;
+	width: 98%;
 	max-width: 560px;
 	min-width: 350px;
 	margin: 0px auto;
@@ -208,6 +208,57 @@ transition: 1s;
 	color: inherit;
 }
 /*End Work Section*/
+
+/*Contact Section*/
+#contact .contactDetails {
+	width: 66%;
+	min-width: 350px;
+	margin: 0px auto;
+	padding: 20px;
+
+	background:white;
+	border-radius: 10px;
+}
+
+#contact .contactDetails .title {
+	padding-bottom: 2px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 2em;
+	border-bottom: 3px solid #44925A;
+}
+
+#contact .contactDetails #myPicture {
+	display: block;
+	margin: 20px auto;
+	width: 160px;
+
+	border-radius: 50%;
+}
+
+#contact .contactDetails #myDescription {
+	margin: 40px 0px;
+	font-family: 'Raleway', sans-serif;
+	color: inherit;
+	text-align: center;
+}
+
+#contact .contactDetails .links {
+	margin: 0px auto;
+	width: 300px;
+}
+
+#contact .contactDetails .links .favicon {
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+#contact .contactDetails .links a {
+	font-family: 'Raleway', sans-serif;
+	color: inherit;
+	text-decoration: underline;
+}
+
+/*End Contact Section*/
 
 /*Media Queries*/
 @media screen and (max-width: 1021px) {

@@ -100,8 +100,8 @@ body {
 }
 /*End Front Page*/
 
-/*About Section*/
-#aboutContent {
+/*Story Section*/
+#storyContent {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -114,22 +114,22 @@ body {
 	border-radius: 10px;
 }
 
-#aboutContent>.column {
+#storyContent>.column {
 	width: 280px;
 
 	border-bottom: 3px solid #924444;
 }
 
-#aboutContent h2 {
+#storyContent h2 {
 	margin: 20px 0px;
-	border-bottom: 3px solid #44925A;;
+	border-bottom: 3px solid #44925A;
 	
 	padding-bottom: 2px;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 2em;
 }
 
-#aboutContent img {
+#storyContent img {
 	display: block;
 	margin: 20px auto;
 
@@ -140,8 +140,70 @@ body {
 	border: 1px solid #323232;
 }
 
-#aboutContent p {
+#storyContent p {
 	font-family: 'Raleway', sans-serif;
 	text-indent: 2em;
 }
-/*End About Section*/
+/*End Story Section*/
+
+/*Work Section*/
+#work .row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#work .project {
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+
+#work .project img {
+	width: 100%;
+	height: 100%;
+
+	border-radius: 10px;
+}
+
+#work .project .details {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+
+	padding: 7px;
+
+	width: 100%;
+	height: 100%;
+	
+	border-radius: 10px;
+	border: 2px solid transparent;
+	
+	opacity: 0;
+	background: white;
+}
+
+#work .project .details:hover {
+opacity: 0.9;
+border: 2px solid #44925A;
+transition: 1s;
+}
+
+#work .project .title {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.5em;
+
+	border-bottom: 2px solid #924444;
+}
+
+#work .project .content {
+	font-family: 'Raleway', sans-serif;
+}
+
+#work .project .links a {
+	font-family: 'Raleway', sans-serif;
+	color: inherit;
+}
+	
+}
+/*End Work Section*/

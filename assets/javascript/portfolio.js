@@ -3,8 +3,11 @@ $(function() {
 	// Configure fullPage.js
 	$('#fullpage').fullpage({
 		anchors: ['front-page', 'story-page', 'work-page', 'contact-page'],
+		controlArrows: false,
 		fixedElements: '#sideNav',
 		menu: '#sideNav>ul',
+		slidesNavigation: true,
+
 
 		// Reveal and Hide Side Nav
 		afterLoad: function (anchorlink){

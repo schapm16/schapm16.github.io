@@ -14,7 +14,7 @@ $(function() {
 				if (anchorlink === 'front-page') {
 					$('#sideNav').animate({
 						opacity: '0',
-						right: '-200px'
+						right: '-80px'
 					}, 'slow', function() {
 						$('#sideNav').css('display','none');
 					});
@@ -22,7 +22,7 @@ $(function() {
 					$('#sideNav').css('display', 'block');
 					$('#sideNav').animate({
 						opacity: '1',
-						right: '0px'
+						right: '25px'
 					}, 'slow');
 				}
 			}

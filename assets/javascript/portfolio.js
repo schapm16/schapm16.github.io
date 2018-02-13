@@ -6,6 +6,7 @@ $(function() {
 		controlArrows: false,
 		fixedElements: '#sideNav',
 		menu: '#sideNav>ul',
+		scrollOverflow: true,
 		slidesNavigation: true,
 
 

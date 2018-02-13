@@ -104,6 +104,7 @@ body {
 /*Work Section*/
 #work .row {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -134,15 +135,15 @@ body {
 	height: 100%;
 	
 	border-radius: 10px;
-	border: 2px solid transparent;
+	border: 3px solid transparent;
 	
 	opacity: 0;
 	background: white;
 }
 
 #work .project .details:hover {
-opacity: 0.9;
-border: 2px solid #44925A;
+opacity: 0.95;
+border: 3px solid #44925A;
 transition: 1s;
 }
 

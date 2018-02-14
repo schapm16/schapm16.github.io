@@ -59,6 +59,8 @@ body {
 
 #story {
 	width: 75%;
+	min-width: 280px;
+
 	margin: 0px auto;
 	padding: 20px;
 
@@ -70,7 +72,6 @@ body {
 	display: flex;
 	align-items: center;
 
-	background: white;
 	padding: 10px;
 	border-left: 3px solid #44925A;
 }
@@ -303,6 +304,33 @@ transition: 1s;
 		width: 300px;
 	}
 }
+
+@media screen and (max-width: 650px) {
+	#storyTitle {
+		flex-direction: column;
+		border-left: none;
+	}
+	
+	#storyTitle span {
+		margin-top: 10px;
+		padding-top: 10px;
+
+		text-align: center;
+	}
+
+	#storyContent {
+		width: auto;
+	}
+
+	#storyContent>.row {
+		flex-direction: column;
+		border-left: none;
+	}
+
+	#storyContent span {
+		margin-top: 10px;
+	}
+};
 
 @media screen and (max-width: 1021px) {
 	.project {

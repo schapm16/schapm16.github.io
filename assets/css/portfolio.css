@@ -56,48 +56,82 @@ body {
 /*End Front Page*/
 
 /*Story Section*/
-#storyContent {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
 
+#story {
 	width: 75%;
 	margin: 0px auto;
 	padding: 20px;
-	
+
 	background: white;
 	border-radius: 10px;
 }
 
-#storyContent>.column {
-	width: 280px;
+#storyTitle {
+	display: flex;
+	align-items: center;
 
-	border-bottom: 3px solid #924444;
+	background: white;
+	padding: 10px;
+	border-left: 3px solid #44925A;
 }
 
-#storyContent h2 {
-	margin: 20px 0px;
-	border-bottom: 3px solid #44925A;
-	
-	padding-bottom: 2px;
+#storyTitle img {
+	display: block;
+
+	width: 100px;
+	height: 100px;
+
+	margin-right: 10px;
+
+	border-radius: 10px;
+	border: 1px solid #323232;
+
+	vertical-align: middle;
+}
+
+#storyTitle span {
+	display: block;
+
 	font-family: 'Work Sans', sans-serif;
-	font-size: 2em;
+	font-size: 1.25em;
+	font-weight: bolder;
+}
+
+#storyContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	width: 66%;
+	margin: 0px auto;
+}
+
+#storyContent>.row {
+	display: flex;
+	align-items: center;
+
+	margin: 20px 0px;
+	padding-left: 10px;
+
+	border-left: 3px solid #924444;
 }
 
 #storyContent img {
 	display: block;
-	margin: 20px auto;
-
-	width: 200px;
-	height: 200px;
+	margin-right: 20px;
 	
+	width: 100px;
+	height: 100px;
 	border-radius: 10px;
 	border: 1px solid #323232;
 }
 
-#storyContent p {
+#storyContent span {
+	display: block;
+	min-width: 215px;
+	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	text-indent: 2em;
 }
 /*End Story Section*/
 

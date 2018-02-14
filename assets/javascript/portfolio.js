@@ -26,6 +26,17 @@ $(function() {
 					}, 'slow');
 				}
 			}
+
+			if (anchorlink === 'story-page') {
+				var rows = $('#storyContent .row');
+				if (rows.eq(0).css('opacity') !==1) {
+					for (var i = 0; i < rows.length; i++) {
+						rows.eq(i).delay(i*200).animate({
+							opacity: '1'
+						}, 'slow');
+					}
+				}
+			}
 		}
 	});
 });

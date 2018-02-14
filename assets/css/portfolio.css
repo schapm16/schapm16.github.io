@@ -7,14 +7,14 @@ body {
 	display: block;
 	width: 98%;
 	max-width: 560px;
-	min-width: 350px;
+	min-width: 300px;
 	margin: 0px auto;
 }
 
 #mainImage {
 	display: block;
 	margin: 20px auto;
-	width: 300px;
+	width: 350px;
 
 	border-radius: 50%;
 	border: 5px solid #924444;
@@ -298,6 +298,12 @@ transition: 1s;
 /*End Side Nav*/
 
 /*Media Queries*/
+@media screen and (max-width: 470px) {
+	#mainImage {
+		width: 300px;
+	}
+}
+
 @media screen and (max-width: 1021px) {
 	.project {
 		margin: 10px auto;

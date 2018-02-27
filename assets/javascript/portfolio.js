@@ -27,6 +27,7 @@ $(function() {
 				}
 			}
 
+			// Animation for Story Page
 			if (anchorlink === 'story-page') {
 				var rows = $('#storyContent .row');
 				if (rows.eq(0).css('opacity') !==1) {

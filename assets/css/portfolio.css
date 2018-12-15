@@ -257,15 +257,18 @@ transition: 1s;
 /*Side Nav*/
 #sideNav {
 	position: fixed;
-	display: none;
 	opacity: 0;
-	right: -150px;
+	right: -80px;
 	top: 25%;
 
 	height: 50%;
 	width: 80px;
 
 	text-align: center;
+
+	transition-property: opacity right;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
 }
 
 #sideNav ul {

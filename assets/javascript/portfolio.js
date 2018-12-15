@@ -1,44 +1,37 @@
-$(function() {
-	
+(function() {
+	const sideNav = document.getElementById('sideNav');
+	const storyContentRows = document.querySelectorAll('#storyContent .row');
+
 	// Configure fullPage.js
-	$('#fullpage').fullpage({
+	new fullpage('#fullpage', {
+		licenseKey: null,
 		anchors: ['front-page', 'story-page', 'work-page', 'contact-page'],
 		controlArrows: false,
 		fixedElements: '#sideNav',
 		menu: '#sideNav>ul',
 		scrollOverflow: true,
 
-		// Reveal and Hide Side Nav
-		afterLoad: function (anchorlink){
+		afterLoad: function (origin, destination) {
+			// Reveal and Hide Side Nav
 			if (screen.width > 1021) {
-				if (anchorlink === 'front-page') {
-					$('#sideNav').animate({
-						opacity: '0',
-						right: '-80px'
-					}, 'slow', function() {
-						$('#sideNav').css('display','none');
-					});
+				if (destination.anchor === 'front-page') {
+					sideNav.style.opacity = '';
+					sideNav.style.right = '';
 				} else {
-					$('#sideNav').css('display', 'block');
-					$('#sideNav').animate({
-						opacity: '1',
-						right: '25px'
-					}, 'slow');
+					sideNav.style.opacity = 1;
+					sideNav.style.right = '25px'
 				}
 			}
 
 			// Animation for Story Page
-			if (anchorlink === 'story-page') {
-				var rows = $('#storyContent .row');
-				if (rows.eq(0).css('opacity') !==1) {
-					for (var i = 0; i < rows.length; i++) {
-						rows.eq(i).delay(i*200).animate({
-							opacity: '1'
-						}, 'slow');
-					}
+			if (destination.anchor === 'story-page') {
+				if (storyContentRows[0].style.opacity !== 1) {
+					storyContentRows.forEach((each, i) => {
+						each.style.transition = `opacity 0.5s linear ${0.2 + i * 0.2}s`;
+						each.style.opacity = 1;
+					})
 				}
 			}
 		}
 	});
-});
-
+})();

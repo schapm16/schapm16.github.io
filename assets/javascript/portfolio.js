@@ -13,7 +13,7 @@
 
 		afterLoad: function (origin, destination) {
 			// Reveal and Hide Side Nav
-			if (screen.width > 1021) {
+			if (screen.width > 1021 && innerWidth > 1021) {
 				if (destination.anchor === 'front-page') {
 					sideNav.style.opacity = '';
 					sideNav.style.right = '';

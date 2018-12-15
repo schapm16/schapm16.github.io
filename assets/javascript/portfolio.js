@@ -33,7 +33,6 @@
     scrollOverflow: true,
 
     afterResize: function() {
-      console.log('resize');
       toggleSideNav();
     },
 
